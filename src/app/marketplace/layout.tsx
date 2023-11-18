@@ -1,6 +1,4 @@
-import Nav from "@/components/nav/Nav";
 import type { Metadata } from "next";
-import React from "react";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -8,5 +6,9 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="h-full w-full">{children}</div>;
+  return (
+    <div className="mb-16 flex h-full w-full justify-center px-6">
+      {children}
+    </div>
+  );
 }
